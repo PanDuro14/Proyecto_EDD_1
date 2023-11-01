@@ -1,3 +1,16 @@
+// Como funciona: 
+
+// paso 1: 
+// - Jugador 1 escoge una palabra y la escribe en el comando 
+// paso 2: 
+// - Jugador 2 escribe una letra: 
+//    caso 1: la letra es existente:
+//        el sistema te felicita y escribe un avance de la palabra seleccionada
+//    caso 2: la letra es inexistente: 
+//        el sistema te humilla y te obliga a volver a intentar
+// paso 3: 
+// - Jugador seguirá jugando. Tendrá la oportunidad de fallar solo 5 veces
+
 package ahorcado;
 
 import java.util.Queue;
@@ -51,6 +64,7 @@ public class Main {
 
                 // En caso de que la validación sea satisfactoria
                 if (letraEncontrada) {
+                    intentos = + 1;
                     System.out.println("¡Letra correcta!");
                     System.out.println("Palabra adivinada: " + new String(palabraAdivinadaArray));
                 } else {
@@ -88,5 +102,6 @@ public class Main {
         //for (int j = 0; j < i; j++) {
         //    System.out.println("Palabra " + (j + 1) + ": " + palabras[j]);
         //}
+        
     }
 }
