@@ -98,10 +98,9 @@ public class Main {
         } while (!res.equalsIgnoreCase("no"));
 
         //Banco de palabras xd
-        //System.out.println("Palabras ingresadas por Jugador 1:");
-        //for (int j = 0; j < i; j++) {
-        //    System.out.println("Palabra " + (j + 1) + ": " + palabras[j]);
-        //}
-        
+        System.out.println("Palabras ingresadas por Jugador 1:");
+        for (int j = 0; j < i; j++) {
+            System.out.println("Palabra " + (j + 1) + ": " + palabras[j]);
+        }
     }
 }
